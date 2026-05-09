@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Protection Strategy Kit | Wellness Aligned Living</title>
+<meta name="robots" content="noindex,nofollow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --plum: #2D1B3D;
+  --plum-deep: #1f1229;
+  --purple: #6B3FA0;
+  --gold: #D4A853;
+  --gold-bright: #E2BC68;
+  --cream: #FAF6F0;
+  --cream-warm: #F2EADE;
+  --teal: #006D77;
+  --teal-bright: #128A95;
+  --green: #2C5F4F;
+  --green-bright: #3F8068;
+  --emerald: #5A9A6B;
+  --ink: #1a1410;
+  --muted: #6b5d52;
+  --line: rgba(45, 27, 61, 0.12);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 19px;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: 'Lato', system-ui, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--plum);
+}
+
+a { color: var(--green-bright); }
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.topbar {
+  background: var(--green);
+  color: var(--cream);
+  text-align: center;
+  padding: 12px 16px;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.brand-row {
+  background: var(--cream);
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+.brand-row .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.brand-row img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+.brand-row .brand-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--plum);
+  font-weight: 900;
+  line-height: 1.3;
+}
+.brand-row .brand-text span { color: var(--gold); display: block; }
+
+.hero {
+  padding: 56px 0 32px;
+  text-align: center;
+}
+
+.checkmark {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: var(--green-bright);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  position: relative;
+  box-shadow: 0 14px 32px rgba(63, 128, 104, 0.35);
+  animation: pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+.checkmark::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border: 2px solid rgba(63, 128, 104, 0.3);
+  border-radius: 50%;
+  animation: ring 1.2s ease-out 0.4s both;
+}
+.checkmark svg {
+  width: 42px;
+  height: 42px;
+  stroke: white;
+  stroke-width: 4;
+  fill: none;
+}
+@keyframes pop {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+@keyframes ring {
+  0% { transform: scale(0.7); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+.eyebrow {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--green-bright);
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 4.6vw, 46px);
+  margin-bottom: 18px;
+}
+
+.hero p.lead {
+  font-size: 19px;
+  color: var(--muted);
+  max-width: 540px;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+
+.downloads {
+  padding: 16px 0 56px;
+}
+
+.download-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--green-bright);
+  border-radius: 6px;
+  padding: 28px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  align-items: center;
+  box-shadow: 0 4px 18px rgba(45, 27, 61, 0.05);
+}
+@media (min-width: 600px) {
+  .download-card { grid-template-columns: 1fr auto; gap: 24px; }
+}
+
+.download-meta {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+.download-icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  background: rgba(63, 128, 104, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.download-icon svg {
+  width: 26px;
+  height: 26px;
+  stroke: var(--green);
+  stroke-width: 1.8;
+  fill: none;
+}
+.download-text .tag {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--purple);
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+.download-text h3 {
+  font-size: 19px;
+  margin-bottom: 4px;
+  line-height: 1.25;
+}
+.download-text p {
+  font-size: 14px;
+  color: var(--muted);
+}
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--green);
+  color: var(--cream);
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 14px 22px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  border: 2px solid var(--green);
+}
+.download-btn:hover {
+  background: var(--green-bright);
+  border-color: var(--green-bright);
+}
+.download-btn svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  fill: none;
+}
+
+/* NEXT STEPS section: green theme */
+.next-steps {
+  background: linear-gradient(135deg, var(--green) 0%, var(--plum) 100%);
+  color: var(--cream);
+  padding: 64px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.next-steps::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(to right, var(--gold) 0%, var(--green-bright) 50%, var(--teal) 100%);
+}
+.next-steps h2 {
+  color: var(--cream);
+  font-size: clamp(28px, 3.6vw, 36px);
+  margin-bottom: 16px;
+}
+.next-steps p.lead {
+  color: rgba(250, 246, 240, 0.85);
+  max-width: 540px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+}
+
+/* Step list with CIRCLE bullets */
+.step-list {
+  list-style: none;
+  padding: 0;
+  max-width: 520px;
+  margin: 0 auto 36px;
+  text-align: left;
+}
+.step-list li {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: rgba(250, 246, 240, 0.95);
+  line-height: 1.55;
+  padding: 18px 0 18px 44px;
+  border-top: 1px solid rgba(250, 246, 240, 0.1);
+  position: relative;
+}
+.step-list li:first-child { border-top: none; }
+.step-list li::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 26px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--gold-bright);
+  box-shadow: 0 0 0 4px rgba(226, 188, 104, 0.2);
+}
+.step-list li strong {
+  display: block;
+  color: var(--gold-bright);
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.step-list li a.inline-link {
+  color: var(--gold-bright);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 700;
+}
+
+/* Webinar CTA inside next-steps */
+.webinar-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gold);
+  color: var(--plum);
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  padding: 16px 32px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transition: all 0.2s ease;
+  border: 2px solid var(--gold);
+}
+.webinar-cta:hover {
+  background: var(--gold-bright);
+  border-color: var(--gold-bright);
+  transform: translateY(-2px);
+}
+.webinar-cta .arrow { font-size: 18px; }
+
+.next-steps-secondary {
+  display: block;
+  margin-top: 18px;
+  color: rgba(250, 246, 240, 0.65);
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  text-decoration: none;
+}
+.next-steps-secondary a {
+  color: var(--gold-bright);
+  text-decoration: underline;
+}
+
+.footer {
+  background: var(--plum-deep);
+  color: rgba(250, 246, 240, 0.6);
+  padding: 32px 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  margin-top: auto;
+  line-height: 1.6;
+}
+.footer p { margin-bottom: 8px; }
+.footer a { color: var(--gold-bright); text-decoration: none; }
+
+</style>
+</head>
+<body>
+
+<div class="topbar">Order confirmed · Your kit is ready</div>
+
+<div class="brand-row">
+  <div class="container">
+    <img src="assets/logo.png" alt="Wellness Aligned Living">
+    <div class="brand-text">
+      Wellness Aligned
+      <span>Living</span>
+    </div>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="container">
+    <div class="checkmark">
+      <svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg>
+    </div>
+    <div class="eyebrow">Welcome to the Kit</div>
+    <h1>Thank you. Your kit is ready to download.</h1>
+    <p class="lead">Both books are below. Save them to your phone or laptop and read them tonight. A backup copy is also being sent to your email.</p>
+  </div>
+</div>
+
+<div class="downloads">
+  <div class="container">
+
+    <div class="download-card">
+      <div class="download-meta">
+        <div class="download-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M14 3v5h5M5 3h9l5 5v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/>
+          </svg>
+        </div>
+        <div class="download-text">
+          <div class="tag">Book 01</div>
+          <h3>What Every Parent Needs to Know That Will Protect Your Kids Forever</h3>
+          <p>PDF · 15 pages · approx. 4 MB</p>
+        </div>
+      </div>
+      <a href="assets/what-every-parent-needs-to-know.pdf" class="download-btn" download>
+        Download
+        <svg viewBox="0 0 24 24"><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/><path d="M3 17v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3"/></svg>
+      </a>
+    </div>
+
+    <div class="download-card">
+      <div class="download-meta">
+        <div class="download-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M14 3v5h5M5 3h9l5 5v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/>
+          </svg>
+        </div>
+        <div class="download-text">
+          <div class="tag">Book 02</div>
+          <h3>The Crisis Cost Snapshot</h3>
+          <p>PDF · 10 pages · approx. 3 MB · Includes worksheet</p>
+        </div>
+      </div>
+      <a href="assets/crisis-cost-snapshot.pdf" class="download-btn" download>
+        Download
+        <svg viewBox="0 0 24 24"><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/><path d="M3 17v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3"/></svg>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<section class="next-steps">
+  <div class="container">
+    <h2>What to do next</h2>
+    <p class="lead">Here's how to get the most out of your kit, in three simple steps.</p>
+
+    <ul class="step-list">
+      <li>
+        <strong>Step One</strong>
+        Read book one tonight. It's a 20-minute read and reframes how you think about coverage.
+      </li>
+      <li>
+        <strong>Step Two</strong>
+        Use the worksheet in book two to calculate your protection number.
+      </li>
+      <li>
+        <strong>Step Three</strong>
+        Reserve your spot at my free Sunday webinar. We go deeper on everything in the kit and answer your questions live.
+      </li>
+    </ul>
+
+    <a href="https://app.gohighlevel.com/v2/preview/mCDRoTpZ2oyf8jhMij5t" class="webinar-cta" target="_blank" rel="noopener">
+      Reserve My Webinar Seat
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <div class="next-steps-secondary">
+      Or follow along on Instagram: <a href="https://instagram.com/wellnessalignedliving" target="_blank" rel="noopener">@wellnessalignedliving</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>If you have any trouble accessing your downloads, reach out to <a href="mailto:Nikohl@WellnessAlignedLiving.com">Nikohl@WellnessAlignedLiving.com</a> and we will make it right.</p>
+    <p>© 2026 Wellness Aligned Living · Educational resource only · Not legal, tax, financial, or insurance advice</p>
+  </div>
+</footer>
+
+</body>
+</html>
